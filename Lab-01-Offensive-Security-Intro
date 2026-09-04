@@ -1,0 +1,57 @@
+Lab 01 — TryHackMe: Offensive Security Intro
+
+Objective:
+Learn basic offensive security concepts by exploring how security professionals can discover web pages that are not immediately visible and understand how sensitive functionality should be protected.
+
+Environment:
+Platform: TryHackMe
+Lab: Offensive Security Intro
+Environment: Authorized cybersecurity training environment
+Operating Environment: Linux terminal provided by TryHackMe
+Target: http://fakebank.thm
+
+Tool Used
+DIRB — a web content discovery tool used to identify directories and pages on a web server.
+
+Procedure:
+Step 1: Accessed the TryHackMe training environment
+I started the Offensive Security Intro lab on TryHackMe and used the Linux terminal provided within the authorized training environment.
+Step 2: Performed web-content discovery
+I used the DIRB command against the fake banking website provided by the lab.
+The purpose was to scan the website for pages or directories that were not immediately visible from the main website.
+Step 3: Reviewed the results
+The DIRB scan discovered two pages:
+/bank-transfer
+/images
+I analyzed the results to determine which page was more likely to contain sensitive functionality.
+The /bank-transfer page appeared more significant because it involved banking functionality, while /images appeared more likely to contain website images or other static resources.
+Step 4: Analyzed how sensitive functionality should be protected
+The lab demonstrated that simply hiding a page or making its URL difficult to guess is not an effective security control.
+I evaluated different ways to protect the bank-transfer functionality and determined that requiring users to authenticate is more effective than:
+Making the URL harder to guess
+Moving the page to another server
+
+Results:
+I successfully completed the TryHackMe Offensive Security Intro lab and used DIRB to discover two pages within the authorized fake banking environment.
+
+What I Learned
+Web pages and directories may exist even when they are not directly visible from a website’s homepage.
+DIRB can be used for web-content discovery in an authorized environment.
+Sensitive functionality should not rely on a hidden or difficult-to-guess URL for protection.
+Authentication helps verify who a user is before granting access to sensitive functionality.
+Security controls should be properly implemented and regularly reviewed.
+
+Key Concepts:
+
+Web Content Discovery
+The process of discovering directories, files, or pages on a web server that may not be directly linked or visible to users.
+Authentication
+The process of verifying who a user is.
+Authorization
+Determining what an authenticated user is allowed to access or do.
+Personal Reflection
+My biggest takeaway from this lab was realizing that sensitive information and functionality may not always be as protected as people assume. It is important for organizations to regularly review their websites and ensure that sensitive areas have proper security controls and access restrictions.
+This lab also showed me that cybersecurity is not just about running tools. It is important to understand what the results mean and why a discovered weakness could create a security risk.
+
+Next Steps:
+Continue building networking and cybersecurity fundamentals through authorized hands-on labs and document what I learn from each exercise.
