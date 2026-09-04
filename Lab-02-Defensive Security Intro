@@ -1,0 +1,62 @@
+Lab 02 — TryHackMe: Defensive Security Intro
+
+Objective
+Learn the fundamentals of defensive security by investigating a simulated attack against a fictional banking organization and practicing basic incident-response activities.
+Environment
+Platform: TryHackMe
+Lab: Defensive Security Intro
+Organization: Fake Bank
+Environment: Authorized cybersecurity training environment
+Role: Defensive security / SOC analyst
+Scenario
+The lab placed me in the role of a new defensive security team member at Fake Bank. I was introduced to a security monitoring dashboard and given a simulated incident involving a large number of login attempts against an employee account.
+The purpose of the scenario was to investigate the activity, respond to the suspected attack, gather information about the attacker, and document the incident.
+Task 1 — Introduction to Incident Response
+The first task asked whether an incident-response team should always immediately eliminate a threat during an active attack.
+I selected False.
+My reasoning was that defenders should investigate and analyze suspicious activity before taking actions that could unnecessarily disrupt legitimate users or systems. For example, immediately disabling an account could affect a legitimate employee who is simply having trouble logging in.
+I connected this to the CIA Triad, particularly availability, because unnecessarily disabling a legitimate user’s account could prevent them from accessing the resources they need to perform their job.
+Task 2 — Investigating the Login Attempts
+The lab introduced a security monitoring dashboard showing activity across the organization’s devices and network.
+I was told that Fake Bank was experiencing hundreds of login attempts.
+The suspicious activity was associated with the employee account:
+Username: Dave.Sanders
+Based on the large number of login attempts, I initially suspected that the activity could be a brute-force/password attack, where an attacker repeatedly attempts different credentials in an effort to gain access.
+The dashboard allowed me to investigate the suspicious login activity and identify the affected account.
+Task 3 — Stopping the Attack
+The defensive team decided to disable Dave Sanders’ account to prevent the suspected attacker from continuing to use the account.
+I navigated to the account-management area through the lab interface and disabled the account by selecting the account’s lock control.
+The account was successfully locked.
+Why this mattered
+If an attacker successfully gained access to an employee account at a bank, they could potentially gain access to sensitive systems or information. Disabling the affected account was an immediate defensive action intended to prevent further unauthorized access through that account.
+Task 4 — Investigating the Hacker / Threat Intelligence
+After stopping the immediate threat, the lab introduced the concept of threat intelligence.
+Threat intelligence involves collecting and sharing information about threats and attackers so defenders can better understand potential future activity.
+I created a threat-intelligence update containing information about the suspicious activity, including the attacker’s IP address, so that other members of the organization could remain alert for related activity.
+My takeaway was that stopping one attack does not necessarily mean the threat is completely gone. An attacker may change tactics, techniques, or methods after a defensive control blocks their original attempt.
+Task 5 — Incident Report
+The final task required me to submit an incident report documenting the investigation.
+The report recorded what happened during the simulated incident and the defensive actions that were taken.
+This demonstrated an important part of defensive security: documentation.
+Incident-response teams need to record what happened, what was investigated, what actions were taken, and relevant information about the threat.
+Key Concepts Learned
+Incident Response
+The process of detecting, investigating, containing, and documenting security incidents.
+Security Monitoring
+Monitoring systems, devices, networks, and other activity to identify suspicious behavior.
+Brute-Force Attack
+A type of password attack involving repeated attempts to guess or obtain valid credentials.
+Threat Intelligence
+Information about threats, attackers, and their behavior that can help an organization prepare for and respond to attacks.
+CIA Triad
+The three major goals of information security:
+Confidentiality — protecting information from unauthorized access.
+Integrity — protecting information from unauthorized modification.
+Availability — ensuring authorized users can access systems and information when needed.
+Reflection
+This lab helped me understand that defensive security is not simply about stopping an attacker as quickly as possible.
+A defender needs to investigate, understand the activity, respond appropriately, gather information, and document the incident.
+One of my biggest takeaways was seeing how multiple defensive activities work together. The security dashboard helped identify suspicious activity, the affected account was disabled to contain the immediate threat, threat intelligence was created to share information about the attacker, and an incident report documented the overall response.
+This gave me a better understanding of what a SOC analyst or incident-response role can involve.
+Next Steps
+Continue building my cybersecurity fundamentals through authorized hands-on labs, with a focus on networking, security monitoring, incident response, and defensive security.
